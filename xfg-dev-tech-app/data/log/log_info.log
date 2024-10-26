@@ -1,0 +1,68 @@
+24-10-26.09:53:29.473 [main            ] INFO  ApiTest                - Starting ApiTest using Java 1.8.0_311 on MacBook-Pro.local with PID 91145 (started by fuzhengwei in /Users/fuzhengwei/1024/KnowledgePlanet/road-map/xfg-dev-tech-disruptor/xfg-dev-tech-app)
+24-10-26.09:53:29.475 [main            ] INFO  ApiTest                - The following 1 profile is active: "dev"
+24-10-26.09:53:31.548 [main            ] INFO  ApiTest                - Started ApiTest in 2.642 seconds (JVM running for 3.751)
+24-10-26.10:24:03.839 [main            ] INFO  DisruptorTest          - Starting DisruptorTest using Java 1.8.0_311 on MacBook-Pro.local with PID 91505 (started by fuzhengwei in /Users/fuzhengwei/1024/KnowledgePlanet/road-map/xfg-dev-tech-disruptor/xfg-dev-tech-app)
+24-10-26.10:24:03.841 [main            ] INFO  DisruptorTest          - The following 1 profile is active: "dev"
+24-10-26.10:24:05.605 [main            ] INFO  DisruptorTest          - Started DisruptorTest in 2.76 seconds (JVM running for 4.022)
+24-10-26.10:24:05.658 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c64cb25] to prepare test instance [cn.bugstack.xfg.dev.test.trigger.DisruptorTest@bb9ab64]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.bugstack.xfg.dev.test.trigger.DisruptorTest': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.lmax.disruptor.dsl.Disruptor<cn.bugstack.xfg.dev.tech.trigger.event.XxxEventHandler$LongEvent>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.lmax.disruptor.dsl.Disruptor<cn.bugstack.xfg.dev.tech.trigger.event.XxxEventHandler$LongEvent>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 29 common frames omitted
+24-10-26.10:26:27.374 [main            ] INFO  DisruptorTest          - Starting DisruptorTest using Java 1.8.0_311 on MacBook-Pro.local with PID 91525 (started by fuzhengwei in /Users/fuzhengwei/1024/KnowledgePlanet/road-map/xfg-dev-tech-disruptor/xfg-dev-tech-app)
+24-10-26.10:26:27.375 [main            ] INFO  DisruptorTest          - The following 1 profile is active: "dev"
+24-10-26.10:26:29.270 [main            ] INFO  DisruptorTest          - Started DisruptorTest in 2.51 seconds (JVM running for 3.678)
+24-10-26.10:28:06.511 [main            ] INFO  DisruptorTest          - Starting DisruptorTest using Java 1.8.0_311 on MacBook-Pro.local with PID 91543 (started by fuzhengwei in /Users/fuzhengwei/1024/KnowledgePlanet/road-map/xfg-dev-tech-disruptor/xfg-dev-tech-app)
+24-10-26.10:28:06.513 [main            ] INFO  DisruptorTest          - The following 1 profile is active: "dev"
+24-10-26.10:28:08.234 [main            ] INFO  DisruptorTest          - Started DisruptorTest in 2.477 seconds (JVM running for 3.526)
+24-10-26.10:36:38.480 [main            ] INFO  DisruptorTest          - Starting DisruptorTest using Java 1.8.0_311 on MacBook-Pro.local with PID 91620 (started by fuzhengwei in /Users/fuzhengwei/1024/KnowledgePlanet/road-map/xfg-dev-tech-disruptor/xfg-dev-tech-app)
+24-10-26.10:36:38.481 [main            ] INFO  DisruptorTest          - The following 1 profile is active: "dev"
+24-10-26.10:36:40.236 [main            ] INFO  DisruptorTest          - Started DisruptorTest in 2.364 seconds (JVM running for 3.44)
+24-10-26.10:36:40.589 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.591 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.591 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.591 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.591 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
