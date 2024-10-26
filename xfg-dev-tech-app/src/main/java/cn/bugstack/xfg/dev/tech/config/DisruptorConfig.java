@@ -1,7 +1,6 @@
 package cn.bugstack.xfg.dev.tech.config;
 
 import cn.bugstack.xfg.dev.tech.trigger.event.XxxEventHandler;
-import com.lmax.disruptor.EventFactory;
 import com.lmax.disruptor.dsl.Disruptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

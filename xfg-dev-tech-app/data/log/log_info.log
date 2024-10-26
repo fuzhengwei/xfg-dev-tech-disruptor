@@ -66,3 +66,16 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
 24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
 24-10-26.10:36:40.592 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:55.827 [main            ] INFO  DisruptorTest          - Starting DisruptorTest using Java 1.8.0_311 on MacBook-Pro.local with PID 92827 (started by fuzhengwei in /Users/fuzhengwei/1024/KnowledgePlanet/road-map/xfg-dev-tech-disruptor/xfg-dev-tech-app)
+24-10-26.11:55:55.829 [main            ] INFO  DisruptorTest          - The following 1 profile is active: "dev"
+24-10-26.11:55:57.749 [main            ] INFO  DisruptorTest          - Started DisruptorTest in 2.526 seconds (JVM running for 3.741)
+24-10-26.11:55:58.125 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
+24-10-26.11:55:58.128 [pool-2-thread-1 ] INFO  XxxEventHandler        - 接收消息：你好，我是 Disruptor Message
